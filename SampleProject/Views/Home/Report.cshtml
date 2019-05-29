@@ -1,0 +1,121 @@
+﻿
+@{
+    ViewData["Title"] = "Report";
+    Layout = null;
+}
+<link href="~/css/mystyle.css" rel="stylesheet" />
+<div class="page" style="margin-top:-50px;page-break-inside: avoid!important;" \>
+
+    <div class="handtag-pagebrack pagebreak handtagfirststylesingleclass">
+        <div class="text-center" style="width:100%;text-align: center;">
+            <span style="font-size:22px"><strong>DataGroup</strong></span><br />
+            <span><strong>FRONT Tag Department</strong></span>
+        </div>
+        <div>
+            <img class="handtag" src="/images/banner1" />
+            <img height="350" width="180" src="/images/banner2" />
+        </div>
+    </div>
+
+    @for (int i = 0; i <= 100; i++)
+    {
+        <div style="width:50mm!important;float: left; margin-left:35px; page-break-inside: avoid;page-break-after: always;">
+            <div class="text-center" style="text-align: center!important;">
+                <table style="width: 100%; font-size:12px">
+                    <tr>
+                        <td style="text-align:right">Key:</td>
+                        <td></td>
+                        <td>@i</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right">Size:</td>
+                        <td></td>
+                        <td>Size</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right">Qty:</td>
+                        <td></td>
+                        <td>Qty Pcs</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="handtag">
+                <div class="upper">
+                    <div style="text-align:center; width:100%">
+                        <div class="circle"></div>
+                    </div>
+                    <div>
+                        <table style="width:100%">
+                            <tr>
+                                <td style="width:50%; text-align:center;font-size:8pt;font-family:'Avenir LT Std 35 Light'">
+                                    <span>lorem</span>
+
+                                    <br />
+                                    <span style="font-size:16pt; font-family: 'Avenir LT Std 95 Black';">lorem</span>
+                                </td>
+                                <td style="width:50%; text-align:center;font-size:8pt;font-family:'Avenir LT Std 35 Light'">
+                                    <span>lorem.</span>
+                                    <br />
+                                    <span style="font-size:16pt; font-family: 'Avenir LT Std 95 Black';">lorem <span style="font-size:6pt;"> cm</span></span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="artcolor">
+                        <table cellspacing="0" rules="all" style="width:100%; border-collapse: collapse; border:1px solid #000; width: 100%; ">
+                            <tr>
+                                <td>
+                                    <table style="width:100%;">
+                                        <tr>
+                                            <td style="width:25%" class="firstcol">art.</td>
+                                            <td class="secondcol">lorem</td>
+                                            <td class="secondcol">lorem</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table style="width:100%;">
+                                        <tr>
+                                            <td style="width:25%" class="firstcol">lorem:</td>
+                                            <td colspan="2" class="secondcol">lorem </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <div class="tagsize">
+                            lo
+                        </div>
+                    </div>
+                    <div class="barcodediv">
+                        <div class="website">lorem.com</div>
+                        <div class="barcodegen">
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="lower">
+                    <div class="currency">
+                        <span class="currencytype">#</span> <span class="dollar">lorem</span><span class="cent">###</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    }
+
+
+</div>
+
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script>
+    $(function () {
+        window.print();
+    })
+</script>

@@ -1,0 +1,167 @@
+.page {
+    width: 21cm;
+    min-height: 29.7cm;
+    margin: 0 auto !important;
+    border: 0 !important;
+    border: 0;
+    border-radius: 0;
+    background: white;
+    box-shadow: none;
+    padding: 0;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+    .page {
+        margin: 0 auto !important;
+        border: initial !important;
+        border-radius: initial !important;
+        width: initial !important;
+        min-height: initial !important;
+        box-shadow: initial !important;
+        background: initial !important;
+        padding: 0 !important;
+    }
+    .handtag {
+        display: block !important;
+        page-break-inside: avoid !important;
+    }
+}
+
+.pagebreak {
+    display: block !important;
+    page-break-inside: avoid !important;
+}
+
+.handtag-pagebrack {
+}
+
+.handtag {
+    float: left;
+    height: 90mm !important;
+    width: 50mm !important;
+    position: relative !important;
+    border: 1px solid #058CF5 !important;
+    display: block !important;
+    page-break-before: always !important;
+    margin: 5px !important;
+    display: block !important;
+    page-break-inside: avoid !important;
+}
+
+
+.pageheadtable {
+    width: 95% !important;
+    font-size: 13px !important;
+    border-collapse: collapse !important;
+    margin-top: 5px !important
+}
+.handtagfirststylesingleclass {
+    float: left !important;
+    width: 200px !important;
+    padding-top: 15px !important;
+    page-break-inside: avoid !important;
+}
+.handtagafterfirststylesingleclass {
+    float: left;
+    display: block;
+    page-break-inside: avoid !important;
+}
+.circle {
+    color: #058CF5 !important;
+    margin: 5px auto !important;
+    width: 15px !important;
+    height: 15px !important;
+    -webkit-border-radius: 25px !important;
+    -moz-border-radius: 25px !important;
+    border-radius: 25px !important;
+    border: 1px solid #058CF5 !important;
+    background: #fff !important;
+}
+
+.upper {
+    padding: 10px !important;
+}
+
+.tagsize {
+    margin-top: 20px !important;
+    text-align: center !important;
+    font-size: 12pt !important;
+    font-family: 'marines1' !important;
+    letter-spacing: 2px
+}
+
+    .tagsize div {
+        float: left !important;
+        padding-left: 2px !important;
+        padding-right: 2px !important;
+        text-align: center !important;
+        line-height: 21px !important;
+    }
+
+.barcodediv {
+    text-align: left !important;
+    margin-top: 15px !important;
+}
+
+    .barcodediv .website {
+        font-size: 9pt !important;
+        margin-bottom: 5px !important;
+        text-align: center !important;
+        font-family: 'Avenir LT Std 35 Light' !important;
+        padding-left: 5px !important;
+        font-weight: 600;
+    }
+
+.lower {
+    border-top: 1px solid #058CF5 !important;
+    border-top-style: dashed !important;
+    height: 39px !important;
+    width: 100% !important;
+    position: absolute !important;
+    bottom: 0 !important;
+}
+
+.currency {
+    text-align: center !important;
+    line-height: 1.28 !important;
+    font-family: 'Avenir LT Std 65 Medium' !important;
+}
+
+.dollar {
+    font-size: 25pt !important;
+}
+
+.barcode {
+    height: 16mm !important;
+    width: 42mm !important;
+}
+
+.artcolor {
+    margin-top: 10px !important;
+}
+
+    .artcolor .firstcol {
+        width: 20% !important;
+        font-size: 8pt !important;
+        padding-left: 5px !important;
+        font-family: 'Avenir LT Std 35 Light' !important;
+    }
+
+    .artcolor .secondcol {
+        font-family: 'Avenir LT Std 65 Medium' !important;
+        font-size: 8pt !important;
+    }
+
+.currencytype, .cent {
+    font-size: 10pt !important;
+}
+
+svg text {
+    font-size: 27pt !important;
+    font-family: 'helvetica45light_0' !important;
+}
